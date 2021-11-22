@@ -1,0 +1,184 @@
+html {
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-green: #a2c131;
+  --bg-white: #fff;
+  --bg-red: #eb5757;
+}
+#main-footer {
+  background: #005f27;
+}
+#main-navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#main-navbar .nav-right-content .nav-item {
+  margin: 0 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: 100px;
+}
+#main-navbar .cart-price {
+  padding: 0 10px;
+}
+#main-navbar .nav-right-content .nav-item .cart-price span {
+  text-decoration: underline;
+}
+.bg-primary {
+  background-color: var(--bg-green) !important;
+}
+.bg-white {
+  background-color: var(--bg-white);
+}
+a.nav-link.active {
+  color: var(--bg-green) !important;
+  text-decoration: underline;
+}
+
+#featured-events .featured-events-1-background {
+  background-image: url("/img/featured-events-1.jpeg");
+  background-size: cover;
+  height: 743px;
+  background-position: center;
+}
+
+#featured-events .featured-events-2-background {
+  background-image: url("/img/featured-events-2.jpeg");
+  background-size: cover;
+  height: 743px;
+  background-position: center;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  padding: 20px;
+}
+
+#featured-events .dark-overlay .featured-content {
+  padding: 10px;
+  position: relative;
+  top: 330px;
+}
+
+.book-button {
+  font-weight: bolder;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.calendar {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 10px;
+  border-radius: 20px;
+  display: inline-flex;
+}
+.text-green {
+  color: var(--bg-green);
+}
+
+#upcoming-events .upcoming-event-background-1 {
+  background-image: url("/img/local-artist-exibition-min.jpeg");
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+}
+#upcoming-events .upcoming-event-background-2 {
+  background-image: url("/img/medical-science-fair-min.jpeg");
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+}
+#upcoming-events .upcoming-event-background-3 {
+  background-image: url("/img/winter-lunapark-min.jpeg");
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+}
+#upcoming-events .upcoming-inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  padding: 20px;
+}
+#upcoming-events .upcoming-inner .upcoming-content {
+  padding: 10px;
+  position: relative;
+  top: 200px;
+}
+
+#winter-fair-section .winter-fair-background-1 {
+  background-image: url("/img/featured-events-1.jpeg");
+  height: 465px;
+  background-position: center;
+}
+#winter-fair-section .winter-fair-background-2 {
+  background-image: url("/img/winter-fair-members-ticket.jpeg");
+  height: 465px;
+  background-position: center;
+}
+#winter-fair-section .dark-overlay .winter-fair-content {
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  top: 200px;
+}
+.go-back {
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  border: 1px solid var(--bg-green);
+  border-radius: 100px;
+}
+
+.down-page {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.orange-link {
+  color: #f5a003;
+}
+.more-info {
+  background-color: rgba(235, 87, 87, 0.2);;
+  padding: 0 10px;
+  border-radius: 20px;
+  display: inline-flex;
+}
+.text-red {
+  color: var(--bg-red);
+}
+.amount-button {
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: #DBB71A;
+  border-radius: 100px;
+}
+.input-amount {
+  width: 61.44px;
+  margin: 0 3px;
+  text-align: center;
+}
+#read-more-content {
+  display: none;
+}
+#read_more {
+  cursor: pointer;
+}
+.striketrought {
+  text-decoration: line-through;
+}
+
+.continue {
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  background-color: var(--bg-green);
+  border-radius: 100px;
+}
