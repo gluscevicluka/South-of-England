@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Remix icons CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>South of England</title>
+  </head>
+  <body>
+    <!--Start of Navbar-->
+    <nav
+      class="navbar navbar-expand-xl navbar-light bg-white fixed-top sticky-top"
+      id="main-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand me-auto" href="index.html"
+          ><img
+            src="img/SouthOfEnglandLogo.png"
+            alt="SouthOfEnglandLogo"
+            class="img-fluid"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="d-sm-block d-xl-flex">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Autumn Show</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Autumn Show Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Winter Fair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Winter Fair Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help/FAQs</a>
+              </li>
+            </div>
+          </ul>
+          <ul class="navbar-nav me-auto mg-lg-0 nav-right-content">
+            <div class="d-flex align-items-center">
+              <li class="nav-item btn py-2">
+                <i class="ri-user-line"></i>
+              </li>
+              <li class="nav-item btn py-2">£</li>
+              <li class="nav-item btn py-2">
+                <img
+                  src="img/icons/britainFlag.png"
+                  alt="Britain flag"
+                  class="img-fluid"
+                />
+              </li>
+              <li class="nav-item bg-primary py-2 px-2">
+                <div class="d-flex justify-content-between cart-price">
+                  <i class="ri-shopping-cart-2-fill"></i>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <div>&nbsp;</div>
+                  <span>$25.00</span>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar-->
+
+    <!--Start of customer information form-->
+      <section class="container mt-5" id="customer-info">
+        <h3 class="fw-bold">Customer Informations</h3>
+        <p>Please enter your details. it is important that you use a valid email address.
+          Your tickets will be sent by email only and to the email address you provide here.</p>
+        <p><strong>Please fill in all required fileds marked with an asterisk (*).</strong></p>
+        <form>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">First Name: *</label>
+                <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email address: *</label>
+                <input type="email" class="form-control login-input">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Phone: *</label>
+                <input type="tel" class="form-control login-input" placeholder="+381">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Last Name: *</label>
+                <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Email Address: *</label>
+                <input type="email" class="form-control login-input login-input">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile Phone: *</label>
+                <input type="tel" class="form-control login-input" placeholder="+381">
+              </div>
+            </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Postcode / ZIP: *</label>
+              <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+            </div>
+            
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label" >Address Line: *</label>
+                  <input type="text" class="form-control login-input" placeholder="House number and street name"  aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Town / City: *</label>
+                  <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">&nbsp;</label>
+                  <input type="text" class="form-control login-input" placeholder="Apartments, suite, unit etc." aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">State / Country: *</label>
+                  <select class="form-select login-input">
+                    <option>Select city</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Is this the first time you have visited the show? *</label>
+              <select class="form-select login-input">
+                <option>Select..</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">How did you hear about us? *</label>
+              <select class="form-select login-input">
+                <option>Select..</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="ticking-agree">
+              <label class="form-check-label" for="ticking-agree">
+                By ticking this box the purchasers agrees to abide by the <a class="yellow-link" href="#">terms & conditions</a> *
+              </label>
+            </div>
+            <small class="text-muted">I confirm that email address above is the correct email address. (You will not receive your tickets if you do not have access to this email address.)
+            </small>
+            <small class="text-muted">By clicking continue, you confirm that you agree to our Terms and Conditions and that your information may be shared with NHS Test and Trace within a 21 day period.</small>
+           <div class="d-flex flex-column mt-3">
+            <a href="#" class="yellow-link">1. Read Terms and Conditions for Autumn Show & Game Fair 2021
+            </a>
+            <br>
+            <a href="#"  class="yellow-link"> 2.  Read Terms and Conditions for Winter Fair 2021</a>
+           </div>
+          </div>
+        </form>
+        <div class="container my-5 d-flex justify-content-between">
+          <a href="cart.html" class="btn back-btn">
+            <div class="d-flex align-items-center">
+              <i class="ri-arrow-left-line"></i>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              Go Back
+            </div>
+          </a>
+          <button href="#" class="btn login-btn" data-bs-toggle="modal" data-bs-target="#shopping_modal">
+            <div class="d-flex align-items-center">
+              Continue
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </button>
+        </div>
+      </section>
+    <!--End of customer information form-->
+
+        <!--Start of Footer-->
+        <footer id="main-footer" class="p-3">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="text-white">Contact Us Find My Ticket</p>
+              <p class="text-white">Powered by TICKETsrv</p>
+            </div>
+          </div>
+        </footer>
+        <!--End of Footer-->
+
+     <!--Start of modal-->   
+     
+     <div class="modal fade" id="shopping_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="/img/SouthOfEnglandLogo.png" alt="SOE Logo" class="img-fluid">
+            <h3 class="fw-bold">Thank you for shopping!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta tortor, ultrices quis turpis scelerisque mattis purus sit. Vulputate mauris risus ipsum, eu.</p>
+            <p>We’ve sent a copy of invoice to your email address: <strong>name@email.com </strong></p>
+              
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta tortor, ultrices quis turpis scelerisque mattis purus sit. Vulputate mauris risus ipsum, eu.</p>
+              
+            <p>Porta tortor, ultrices quis turpis scelerisque mattis purus sit.</p>
+            <a href="index.html" class="btn login-btn mt-3"  data-bs-target="#shopping_modal">
+              <div class="d-flex align-items-center">
+                Return to Shop
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--End of modal-->   
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
