@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>South of England</title>
+    
   </head>
   <body>
     <!--Start of Navbar-->
@@ -53,7 +54,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <div class="d-sm-block d-xl-flex">
               <li class="nav-item">
@@ -63,7 +64,7 @@
                 <a class="nav-link" href="#">Event List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Autumn Show</a>
+                <a class="nav-link" href="single_events.html">Autumn Show</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Autumn Show Members</a>
@@ -90,10 +91,13 @@
                   src="img/icons/britainFlag.png"
                   alt="Britain flag"
                   class="img-fluid"
+                  width="27"
+                  height="16"
                 />
               </li>
-              <li class="nav-item bg-primary py-2 px-2">
-                <div class="d-flex justify-content-between cart-price">
+                 <li class="bg-primary nav-item p-2" style="width: 120px;
+              height: 50px;">
+                <div class=" d-flex align-items-center justify-content-between cart-price">
                   <i class="ri-shopping-cart-2-fill"></i>
                   <div>&nbsp;</div>
                   <div>&nbsp;</div>
@@ -206,7 +210,7 @@
           </div>
         </form>
         <div class="container my-5 d-flex justify-content-between">
-          <a href="cart.html" class="btn back-btn">
+          <a href="cart.html" class="btn back-btn p-sm-2 p-md-4">
             <div class="d-flex align-items-center">
               <i class="ri-arrow-left-line"></i>
               <div>&nbsp;</div>
@@ -214,7 +218,7 @@
               Go Back
             </div>
           </a>
-          <button href="#" class="btn login-btn" data-bs-toggle="modal" data-bs-target="#shopping_modal">
+          <button href="#" class="btn login-btn p-sm-2 p-md-4" data-bs-toggle="modal" data-bs-target="#shopping_modal">
             <div class="d-flex align-items-center">
               Continue
               <div>&nbsp;</div>
@@ -238,7 +242,6 @@
         <!--End of Footer-->
 
      <!--Start of modal-->   
-     
      <div class="modal fade" id="shopping_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">

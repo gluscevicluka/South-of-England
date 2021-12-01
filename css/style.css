@@ -22,7 +22,11 @@ html {
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8;
   border-radius: 100px;
+  width: 50px;
+  height: 50px;
 }
+
+
 #main-navbar .cart-price {
   padding: 0 10px;
 }
@@ -63,11 +67,11 @@ a.nav-link.active {
   padding: 20px;
 }
 
-#featured-events .dark-overlay .featured-content {
+/* #featured-events .dark-overlay .featured-content {
   padding: 10px;
   position: relative;
-  top: 330px;
-}
+  top: 380px;
+} */
 
 .book-button {
   font-weight: bolder;
@@ -80,8 +84,8 @@ a.nav-link.active {
   border-radius: 20px;
   display: inline-flex;
 }
-.calendar-green{
-  background-color: rgba(162, 193, 49, 0.2);;
+.calendar-green {
+  background-color: rgba(162, 193, 49, 0.2);
   padding: 0 10px;
   border-radius: 20px;
   display: inline-flex;
@@ -115,8 +119,8 @@ a.nav-link.active {
 }
 #upcoming-events .upcoming-inner .upcoming-content {
   padding: 10px;
-  position: relative;
-  top: 200px;
+  /* position: relative;
+  top: 200px; */
 }
 
 #winter-fair-section .winter-fair-background-1 {
@@ -132,8 +136,8 @@ a.nav-link.active {
 #winter-fair-section .dark-overlay .winter-fair-content {
   color: #fff;
   padding: 10px;
-  position: relative;
-  top: 200px;
+  /* position: relative;
+  top: 200px; */
 }
 .go-back {
   padding: 10px 30px;
@@ -165,9 +169,12 @@ a.nav-link.active {
 }
 .amount-button {
   font-weight: 700;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   background-color: #dbb71a;
   border-radius: 100px;
+  height: 35px;
+  width: 35px;
+  font-size: 14px;
 }
 .input-amount {
   width: 61.44px;
@@ -216,17 +223,17 @@ a.nav-link.active {
 .your-order {
   padding: 45px 34px;
   border-radius: 5px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
-  .voucher-input {
-  background: #F8F8F8;
+.voucher-input {
+  background: #f8f8f8;
   padding: 15px 26px;
 }
 #cart-overview #terms_and_conditions {
   width: 30px;
   height: 30px;
 }
-.donate-section  {
+.donate-section {
   color: #00007e;
   background: #d0d0f6;
   padding: 10px;
@@ -243,7 +250,7 @@ a.nav-link.active {
   height: 64px;
 }
 #login-background {
-  background-image: url('/img/checkout.jpg');
+  background-image: url("/img/checkout.jpg");
   background-size: cover;
   height: 60vh;
   width: 100%;
@@ -251,28 +258,28 @@ a.nav-link.active {
 #customer-info .login-input,
 #login-form input {
   padding: 15px 26px;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .yellow-link,
 .yellow-link:hover,
 .yellow-link:active {
-  color: #DBB71A;
+  color: #dbb71a;
 }
 .modal-body .login-btn,
 #customer-info .login-btn,
 #login-form .login-btn {
-  padding: 16px 60px;
-  background: #A2C131;
+  /* padding: 16px 60px; */
+  background: #a2c131;
   border-radius: 100px;
   font-weight: bold;
 }
 
 #customer-info .back-btn,
 #login-form .back-btn {
-  padding: 16px 60px;
+  /* padding: 16px 60px; */
   border-radius: 100px;
   font-weight: bold;
-  border-color: #A2C131;
+  border-color: #a2c131;
 }
 
 .modal-body {
@@ -280,21 +287,21 @@ a.nav-link.active {
 }
 
 .your-order-background {
-  background-image: url('/img/checkout.jpg');
+  background-image: url("/img/checkout.jpg");
   background-size: cover;
   height: 10vh;
 }
 
 .flatpickr-day {
-  color:#333 ;
+  color: #333;
   font-weight: bolder;
 }
 
-.flatpickr-day:hover{
+.flatpickr-day:hover {
   background-color: var(--bg-green);
   opacity: 0.8;
 }
-.flatpickr-day.selected{
+.flatpickr-day.selected {
   background-color: var(--bg-green);
   border-color: var(--bg-green);
 }
