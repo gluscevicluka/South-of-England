@@ -17,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,700;1,900&display=swap"
-      rel="stylesheet"
     />
     <!--Remix icons CDN-->
     <link
@@ -36,7 +35,7 @@
       id="main-navbar"
     >
       <div class="container">
-        <a class="navbar-brand me-auto" href="index.html"
+        <a class="navbar-brand" href="index.html"
           ><img
             src="img/SouthOfEnglandLogo.png"
             alt="SouthOfEnglandLogo"
@@ -54,7 +53,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <div class="d-sm-block d-xl-flex">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
@@ -79,7 +78,7 @@
               </li>
             </div>
           </ul>
-          <ul class="navbar-nav me-auto mg-lg-0 nav-right-content">
+          <ul class="navbar-nav ms-auto nav-right-content">
             <div class="d-flex align-items-center">
               <li class="nav-item btn py-2">
                 <i class="ri-user-line"></i>
@@ -94,15 +93,11 @@
                   height="16"
                 />
               </li>
-                 <li class="bg-primary nav-item p-2" style="width: 120px;
-              height: 50px;">
-                <div class=" d-flex align-items-center justify-content-between cart-price">
-                  <i class="ri-shopping-cart-2-fill"></i>
-                  <div>&nbsp;</div>
-                  <div>&nbsp;</div>
-                  <div>&nbsp;</div>
-                  <span>$25.00</span>
-                </div>
+              <li class="nav-item">
+                <button class="btn bg-primary d-flex px-4 default-radius">
+                  <i class="ri-shopping-cart-2-fill"></i> &nbsp; &nbsp;
+                  <span class="text-underline">$25.00</span>
+                </button>
               </li>
             </div>
           </ul>
@@ -123,7 +118,7 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
-                <th>
+                <th class="text-end">
                   <div class="delete-item">
                     <i class="ri-delete-bin-line"></i> &nbsp;<a
                       class="delete-item"
@@ -141,13 +136,15 @@
                 <td>£9.90</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <button class="btn amount-button-xs">-</button>
+                    <button class="btn amount-button">-</button>
                     <span class="mx-2">2</span>
-                    <button class="btn amount-button-xs">+</button>
+                    <button class="btn amount-button">+</button>
                   </div>
                 </td>
                 <td>$19.80</td>
-                <td class="text-end"><i class="ri-delete-bin-line delete-item"></i></td>
+                <td class="text-end">
+                  <i class="ri-delete-bin-line delete-item"></i>
+                </td>
               </tr>
               <tr class="align-right">
                 <td>Saturday Senior</td>
@@ -155,27 +152,30 @@
                 <td>£13.00</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <button class="btn amount-button-xs">-</button>
+                    <button class="btn amount-button">-</button>
                     <span class="mx-2">1</span>
-                    <button class="btn amount-button-xs">+</button>
+                    <button class="btn amount-button">+</button>
                   </div>
                 </td>
                 <td>$13.00</td>
-                <td class="text-end"><i class="ri-delete-bin-line delete-item"></i></td>
+                <td class="text-end">
+                  <i class="ri-delete-bin-line delete-item"></i>
+                </td>
               </tr>
               <tr>
                 <td>Saturday child (Age 0-4)</td>
-
                 <td>£0.00</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <button class="btn amount-button-xs">-</button>
+                    <button class="btn amount-button">-</button>
                     <span class="mx-2">3</span>
-                    <button class="btn amount-button-xs">+</button>
+                    <button class="btn amount-button">+</button>
                   </div>
                 </td>
                 <td>$0.00</td>
-                <td class="text-end"><i class="ri-delete-bin-line delete-item"></i></td>
+                <td class="text-end">
+                  <i class="ri-delete-bin-line delete-item"></i>
+                </td>
               </tr>
               <tr>
                 <td>Saturday child (Age 5-15)</td>
@@ -183,88 +183,90 @@
                 <td>£0.00</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <button class="btn amount-button-xs">-</button>
+                    <button class="btn amount-button">-</button>
                     <span class="mx-2">2</span>
-                    <button class="btn amount-button-xs">+</button>
+                    <button class="btn amount-button">+</button>
                   </div>
                 </td>
                 <td>$0.00</td>
-                <td  class="text-end"><i class="ri-delete-bin-line delete-item"></i></td>
+                <td class="text-end">
+                  <i class="ri-delete-bin-line delete-item"></i>
+                </td>
               </tr>
             </tbody>
           </table>
           <!--Start of donate section-->
           <section id="donate-section">
-            <div class="row">
-              <div class="col-lg-8 donate-section">
-                <div class="row">
-                  <div class="col-lg-1"><i class="ri-hand-coin-line fs-1 fs-1"></i></div>
-                  <div class="col-lg-11">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_5"
-                        />
-                        <label class="form-check-label" for="donate_5"
-                          ><strong>Donate £5.00</strong></label
-                        >
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_10"
-                        />
-                        <label class="form-check-label" for="donate_10"
-                          ><strong>Donate £10.00</strong></label
-                        >
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_20"
-                        />
-                        <label class="form-check-label" for="donate_20"
-                          ><strong>Donate £20.00</strong></label
-                        >
-                      </div>
+            <div class="donate-section">
+              <div class="row">
+                <div class="col-lg-1">
+                  <i class="ri-hand-coin-line fs-1 fs-1"></i>
+                </div>
+                <div class="col-lg-11">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="donate_5"
+                      />
+                      <label class="form-check-label" for="donate_5"
+                        ><strong>Donate £5.00</strong></label
+                      >
                     </div>
                     <div class="d-flex align-items-center">
                       <input
                         class="form-check-input"
                         type="checkbox"
-                        id="donate_50"
+                        id="donate_10"
                       />
-                      <label class="form-check-label" for="donate_50"
-                        ><strong>Donate £50.00</strong></label
+                      <label class="form-check-label" for="donate_10"
+                        ><strong>Donate £10.00</strong></label
                       >
                     </div>
-                    <p class="mt-3">
-                      <strong>Donate to "Whizz kids"</strong>. Whizz kids wants
-                      all young whellchar users lives to be full of fun,
-                      friendship and freedom. They provide vital mobility
-                      equipment across the UK and support yound wheelchair users
-                      throught skills training,clubs and employability.
-                    </p>
                     <div class="d-flex align-items-center">
-                      <p>or enter a custom amount:</p>
-                      <div>&nbsp;</div>
-                      <div>&nbsp;</div>
                       <input
-                        class="form-control w-25 h-50"
-                        type="text"
-                        value="0.00"
+                        class="form-check-input"
+                        type="checkbox"
+                        id="donate_20"
                       />
+                      <label class="form-check-label" for="donate_20"
+                        ><strong>Donate £20.00</strong></label
+                      >
                     </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="donate_50"
+                    />
+                    <label class="form-check-label" for="donate_50"
+                      ><strong>Donate £50.00</strong></label
+                    >
+                  </div>
+                  <p class="mt-3">
+                    <strong>Donate to "Whizz kids"</strong>. Whizz kids wants
+                    all young whellchar users lives to be full of fun,
+                    friendship and freedom. They provide vital mobility
+                    equipment across the UK and support yound wheelchair users
+                    throught skills training,clubs and employability.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <p>or enter a custom amount:</p>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <input
+                      class="form-control w-25 h-50"
+                      type="text"
+                      value="0.00"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-           <!--End of donate section-->
+          <!--End of donate section-->
         </div>
         <div class="col-lg-4 your-order fixed-right">
           <h4 class="fw-bolder">Your order</h4>
