@@ -70,7 +70,6 @@ a.nav-link.active {
   padding: 20px;
 }
 
-
 #featured-events .dark-overlay .featured-content {
   padding: 10px;
   position: absolute;
@@ -161,7 +160,7 @@ a.nav-link.active {
 
 .orange-link {
   color: #f5a003;
-} 
+}
 .more-info {
   background-color: rgba(235, 87, 87, 0.2);
   padding: 5px 15px;
@@ -204,7 +203,6 @@ a.nav-link.active {
   border-radius: 100px;
 }
 
-
 #cart-overview .delete-item {
   color: #eb5757;
 }
@@ -222,6 +220,13 @@ a.nav-link.active {
   padding: 45px 34px;
   border-radius: 5px;
   border: 1px solid #e0e0e0;
+  background-color: #fff;
+  /* position: fixed;
+  right: 55px; */
+  position: fixed;
+  width: 25vw;
+  height: 65vh;
+  right: 8%;
 }
 .voucher-input {
   background: #f8f8f8;
@@ -302,4 +307,8 @@ a.nav-link.active {
 .flatpickr-day.selected {
   background-color: var(--bg-green);
   border-color: var(--bg-green);
+}
+
+.modal-body {
+  padding: 16px;
 }
