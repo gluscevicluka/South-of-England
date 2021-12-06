@@ -54,7 +54,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-            <div class="d-sm-block d-xl-flex">
+            <div class="d-sm-block d-xl-flex align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
               </li>
@@ -127,92 +127,94 @@
     <!--Start of cart section-->
     <section class="container mt-5" id="cart-overview">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 mb-4">
           <h4 class="fw-bolder">Cart Overview</h4>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th class="text-end">
-                  <div class="delete-item">
-                    <i class="ri-delete-bin-line"></i> &nbsp;<a
-                      class="delete-item"
-                      href="#"
-                    >
-                      Empty Cart</a
-                    >
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Saturday Adult</td>
-                <td>£9.90</td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <button class="btn amount-button">-</button>
-                    <span class="mx-2">2</span>
-                    <button class="btn amount-button">+</button>
-                  </div>
-                </td>
-                <td>$19.80</td>
-                <td class="text-end">
-                  <i class="ri-delete-bin-line delete-item"></i>
-                </td>
-              </tr>
-              <tr class="align-right">
-                <td>Saturday Senior</td>
+          <div class="table-responsive mb-4">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th class="text-end">
+                    <div class="delete-item">
+                      <i class="ri-delete-bin-line"></i> &nbsp;<a
+                        class="delete-item"
+                        href="#"
+                      >
+                        Empty Cart</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Saturday Adult</td>
+                  <td>£9.90</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn amount-button">-</button>
+                      <span class="mx-2">2</span>
+                      <button class="btn amount-button">+</button>
+                    </div>
+                  </td>
+                  <td>$19.80</td>
+                  <td class="text-end">
+                    <i class="ri-delete-bin-line delete-item"></i>
+                  </td>
+                </tr>
+                <tr class="align-right">
+                  <td>Saturday Senior</td>
 
-                <td>£13.00</td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <button class="btn amount-button">-</button>
-                    <span class="mx-2">1</span>
-                    <button class="btn amount-button">+</button>
-                  </div>
-                </td>
-                <td>$13.00</td>
-                <td class="text-end">
-                  <i class="ri-delete-bin-line delete-item"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>Saturday child (Age 0-4)</td>
-                <td>£0.00</td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <button class="btn amount-button">-</button>
-                    <span class="mx-2">3</span>
-                    <button class="btn amount-button">+</button>
-                  </div>
-                </td>
-                <td>$0.00</td>
-                <td class="text-end">
-                  <i class="ri-delete-bin-line delete-item"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>Saturday child (Age 5-15)</td>
+                  <td>£13.00</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn amount-button">-</button>
+                      <span class="mx-2">1</span>
+                      <button class="btn amount-button">+</button>
+                    </div>
+                  </td>
+                  <td>$13.00</td>
+                  <td class="text-end">
+                    <i class="ri-delete-bin-line delete-item"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Saturday child (Age 0-4)</td>
+                  <td>£0.00</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn amount-button">-</button>
+                      <span class="mx-2">3</span>
+                      <button class="btn amount-button">+</button>
+                    </div>
+                  </td>
+                  <td>$0.00</td>
+                  <td class="text-end">
+                    <i class="ri-delete-bin-line delete-item"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Saturday child (Age 5-15)</td>
 
-                <td>£0.00</td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <button class="btn amount-button">-</button>
-                    <span class="mx-2">2</span>
-                    <button class="btn amount-button">+</button>
-                  </div>
-                </td>
-                <td>$0.00</td>
-                <td class="text-end">
-                  <i class="ri-delete-bin-line delete-item"></i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <td>£0.00</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn amount-button">-</button>
+                      <span class="mx-2">2</span>
+                      <button class="btn amount-button">+</button>
+                    </div>
+                  </td>
+                  <td>$0.00</td>
+                  <td class="text-end">
+                    <i class="ri-delete-bin-line delete-item"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <!--Start of donate section-->
           <section id="donate-section">
             <div class="donate-section">
@@ -221,7 +223,7 @@
                   <i class="ri-hand-coin-line fs-1 fs-1"></i>
                 </div>
                 <div class="col-lg-11">
-                  <div class="d-flex justify-content-between">
+                  <div class="d-block d-sm-flex justify-content-between">
                     <div class="d-flex align-items-center">
                       <input
                         class="form-check-input"

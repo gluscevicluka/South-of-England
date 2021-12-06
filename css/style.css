@@ -139,8 +139,8 @@ a.nav-link.active {
 #winter-fair-section .dark-overlay .winter-fair-content {
   color: #fff;
   padding: 10px;
-  /* position: relative;
-  top: 200px; */
+  position: relative;
+  top: 200px;
 }
 .go-back {
   padding: 10px 30px;
@@ -221,12 +221,6 @@ a.nav-link.active {
   border-radius: 5px;
   border: 1px solid #e0e0e0;
   background-color: #fff;
-  /* position: fixed;
-  right: 55px; */
-  position: fixed;
-  width: 25vw;
-  height: 65vh;
-  right: 8%;
 }
 .voucher-input {
   background: #f8f8f8;
@@ -311,4 +305,27 @@ a.nav-link.active {
 
 .modal-body {
   padding: 16px;
+}
+@media only screen and (max-width: 576px) {
+  #featured-events .dark-overlay .featured-content {
+    padding: 10px;
+    position: absolute;
+    top: 235px;
+  }
+  #winter-fair-section .dark-overlay .winter-fair-content {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 140px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .your-order {
+    padding: 45px 34px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    position: fixed;
+    right: 13px;
+  }
 }
