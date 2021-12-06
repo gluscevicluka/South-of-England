@@ -73,7 +73,7 @@ a.nav-link.active {
 #featured-events .dark-overlay .featured-content {
   padding: 10px;
   position: absolute;
-  top: 325px;
+  top: 45%;
 }
 
 .book-button {
@@ -140,7 +140,7 @@ a.nav-link.active {
   color: #fff;
   padding: 10px;
   position: relative;
-  top: 200px;
+  top: 40%;
 }
 .go-back {
   padding: 10px 30px;
