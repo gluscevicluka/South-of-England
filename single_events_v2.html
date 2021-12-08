@@ -57,13 +57,13 @@
           <ul class="navbar-nav ms-auto ">
             <div class="d-sm-block d-xl-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Event List</a>
+                <a class="nav-link" href="event_list.html">Event List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Autumn Show</a>
+                <a class="nav-link " href="single_events.html">Autumn Show</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Autumn Show Members</a>
@@ -86,11 +86,27 @@
               </li>
               <li class="nav-item btn py-2">£</li>
               <li class="nav-item btn py-2">
-                <img
-                  src="img/icons/britainFlag.png"
-                  alt="Britain flag"
-                  class="img-fluid"
-                />
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="img/icons/britainFlag.png"
+                      alt="Britain flag"
+                      class="img-fluid"
+                      width="27"
+                      height="16"
+                    />
+                  </div>
+                  <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton1">
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/serbianFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Serbian</a></li>
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/chinaFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Chinese</a></li>
+                  </ul>
+                </div>
               </li>
                  <li class="nav-item " >
                  <a href="checkout.html" class="btn bg-primary d-flex px-4 default-radius"><i class="ri-shopping-cart-2-fill"></i> &nbsp;   <span class="text-underline">$25.00</span></a>
@@ -104,8 +120,8 @@
 
     <!--Start of Autumn show section-->
       <section id="single_events" class="container my-5">
-        <div class="row">
-          <div class="col-lg-7">
+        <div class="row" >
+          <div class="col-lg-7" >
             <h1 class="fw-bolder">Autumn Show & Game Fair 2021</h1>
           <div class="calendar-green ">
             <p>
@@ -125,12 +141,12 @@
             <p>Carers can attend free of charge. Please see <a href="#" class="orange-link"> https://www.seas.org.uk/info/visiting/</a> for details.</p>
           </div>
           <div class="more-info">
-            <p>
+            <p> 
               <div class="d-flex align-items-center text-red">
                 <i class="ri-calendar-2-line"></i>
                 <div>&nbsp;</div>
                 <div>&nbsp;</div>
-              Click here for more info
+                <a class=" text-red" href="#" style="text-decoration: none;">  Click here for more info</a>
               </div>
             </p>
            </div>
@@ -150,7 +166,7 @@
         </div>
     <!--End of Date section-->
     <h4 class="fw-bold mt-5">Default header</h4>
-        <section class="container mt-4" id="default-header">
+        <section class="container mt-4" id="default-header" >
           <div>
             <div class="d-md-flex justify-content-between">
               <div>
@@ -241,132 +257,139 @@
           </div>
         </section>
           </div>
-          <div class="col-lg-5">
-            <div class="your-order-background"></div>
-            <div class="your-order">
-              <h5 class="fw-bold">Order summary</h5>
-              <div class="d-flex justify-content-between">
-                <span>2x Saturday Adult</span>
-                <span>£67.60</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>2x Saturday Child</span>
-                <span>£0.00</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>1x General Admisstion</span>
-                <span>£32.80</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>2x Ticket + After Show</span>
-                <span>£67.60</span>
-              </div>
-              <hr>
-              <div class="d-flex justify-content-between">
-                <span>Subtotal:</span>
-                <span>£168.00</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span><strong>Total:</strong></span>
-                <span><strong>£168.00</strong></span>
-              </div>
-              <hr>
-              <h6 class="fw-bold mt-3">Voucher:</h6>
-              <input
-                class="form-control voucher-input"
-                type="text"
-                placeholder="Enter your voucher code"
-                id="voucher_code"
-              />
-              <!--Start of donate section-->
-          <section  class="mt-4 donate-section">
-                <div class="row">
-                  <div class="col-lg-1"><i class="ri-hand-coin-line fs-1"></i></div>
-                  <div class="col-lg-11">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_5"
-                        />
-                        <label class="form-check-label" for="donate_5"
-                          ><strong>Donate £5.00</strong></label
-                        >
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_10"
-                        />
-                        <label class="form-check-label" for="donate_10"
-                          ><strong>Donate £10.00</strong></label
-                        >
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="donate_20"
-                        />
-                        <label class="form-check-label" for="donate_20"
-                          ><strong>Donate £20.00</strong></label
-                        >
-                      </div>
+          <div class="col-lg-5 your-order" >
+                  <h5 class="fw-bold">Order summary</h5>
+                  <div class="d-flex justify-content-between">
+                    <span>2x Saturday Adult</span>
+                    <span>£67.60</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>2x Saturday Child</span>
+                    <span>£0.00</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>1x General Admisstion</span>
+                    <span>£32.80</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>2x Ticket + After Show</span>
+                    <span>£67.60</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <span>Subtotal:</span>
+                    <span>£168.00</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span><strong>Total:</strong></span>
+                    <span><strong>£168.00</strong></span>
+                  </div>
+                  <hr>
+                  <h6 class="fw-bold mt-3">Voucher:</h6>
+                  <input
+                    class="form-control voucher-input"
+                    type="text"
+                    placeholder="Enter your voucher code"
+                    id="voucher_code"
+                  />
+                     <!--Start of donate section-->
+              <section id="donate-section" class="mt-3">
+                <div class="donate-section">
+                  <div class="row">
+                    <div class="col-lg-1">
+                      <i class="ri-hand-coin-line fs-1 fs-1"></i>
                     </div>
-                    <div class="d-flex align-items-center">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="donate_50"
-                      />
-                      <label class="form-check-label" for="donate_50"
-                        ><strong>Donate £50.00</strong></label
-                      >
-                    </div>
-                    <p class="mt-3">
-                      <strong>Donate to "Whizz kids"</strong>. Whizz kids wants
-                      all young whellchar users lives to be full of fun,
-                      friendship and freedom. They provide vital mobility
-                      equipment across the UK and support yound wheelchair users
-                      throught skills training,clubs and employability.
-                    </p>
-                    <div class="d-flex align-items-center">
-                      <p>or enter a custom amount:</p>
-                      <div>&nbsp;</div>
-                      <div>&nbsp;</div>
-                      <input
-                        class="form-control w-25 h-50"
-                        type="text"
-                        value="0.00"
-                      />
+                    <div class="col-lg-11">
+                      <div class="d-flex ">
+                        <div class="d-flex align-items-center">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="donate_5"
+                            name="donate_radio"
+                          />
+                          <label class="form-check-label" for="donate_5"
+                            ><strong>Donate £5.00</strong></label
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="donate_10"
+                            name="donate_radio"
+                          />
+                          <label class="form-check-label" for="donate_10"
+                            ><strong>Donate £10.00</strong></label
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="donate_20"
+                            name="donate_radio"
+                          />
+                          <label class="form-check-label" for="donate_20"
+                            ><strong>Donate £20.00</strong></label
+                          >
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            id="donate_50"
+                            name="donate_radio"
+                          />
+                          <label class="form-check-label" for="donate_50"
+                            ><strong>Donate £50.00</strong></label
+                          >
+                        </div>
+                      </div>
+                      <p class="mt-3">
+                        <strong>Donate to "Whizz kids"</strong>. Whizz kids wants
+                        all young whellchar users lives to be full of fun,
+                        friendship and freedom. They provide vital mobility
+                        equipment across the UK and support yound wheelchair users
+                        throught skills training,clubs and employability.
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <p>or enter a custom amount:</p>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <input
+                          class="form-control w-25 h-50"
+                          type="text"
+                          value="0.00"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-          </section>
-           <!--End of donate section-->
-               <!--Start of control section-->
-      <div class=" mt-3 d-flex justify-content-between">
-        <a href="index.html" class="btn go-back">
-          <div class="d-flex align-items-center">
-            <i class="ri-arrow-left-line"></i>
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          Go Back
-        </div>
-        </a>
-        <a href="cart.html" class="btn continue">
-          <div class="d-flex align-items-center">
-            Continue
-            <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <i class="ri-arrow-right-line"></i>
-        </div>
-        </a>
-      </div>
-     <!--End of control section-->
+              </section>
+              <!--End of donate section-->
+                   <!--Start of control section-->
+          <div class="mt-3 d-flex justify-content-between">
+            <a href="index.html" class="btn go-back">
+              <div class="d-flex align-items-center">
+                <i class="ri-arrow-left-line"></i>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              Go Back
             </div>
+            </a>
+            <a href="cart.html" class="btn continue">
+              <div class="d-flex align-items-center">
+                Continue
+                <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+            </a>
+          </div>
+         <!--End of control section-->
+                
+              
           </div>
         </div>
       </section>
@@ -388,8 +411,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-  
-   
     <script src="app.js"></script>
   </body>
 </html>
