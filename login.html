@@ -96,15 +96,14 @@
                   height="16"
                  >
                   </div>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><i class="ri-flag-line"></i></li>
-                    <li><i class="ri-flag-line"></i></li>
-                    <li><i class="ri-flag-line"></i></li>
+                  <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton1">
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/serbianFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Serbian</a></li>
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/chinaFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Chinese</a></li>
                   </ul>
                 </div>
               </li>
                  <li class="nav-item " >
-                 <button class="btn bg-primary d-flex px-4 default-radius"><i class="ri-shopping-cart-2-fill"></i> &nbsp;  &nbsp; <span class="text-underline">$25.00</span></button>
+                 <a href="checkout.html" class="btn bg-primary d-flex px-4 default-radius"><i class="ri-shopping-cart-2-fill"></i> &nbsp;  <span class="text-underline">$25.00</span></a>
               </li>
             </div>
           </ul>
@@ -124,28 +123,28 @@
         >Please select one of the following options to checkout, if you have an
         account already, please login.</small
       >
-      <h3 class="fw-bold">Log In</h3>
+      <h3 class="fw-bold mt-4">Log In</h3>
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <label for="email" class="form-label">Email:</label>
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
+            id="email"
             aria-describedby="emailHelp"
           />
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label"
+          <label for="password" class="form-label"
             >Password:</label
           >
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="password"
           />
         </div>
-        <div class="d-flex justify-content-between">
+        <div class="d-block d-md-flex justify-content-between">
           <a class="yellow-link" href="#">Forgot Your Password?</a>
           <a class="yellow-link" href="#"
             >Don’t have an account? <strong>Register an account</strong></a
@@ -192,8 +191,8 @@
     <footer id="main-footer" class="p-3">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
-          <p class="text-white">Contact Us Find My Ticket</p>
-          <p class="text-white">Powered by TICKETsrv</p>
+          <div class="text-white">Contact Us Find My Ticket</div>
+          <div class="text-white">Powered by TICKETsrv</div>
         </div>
       </div>
     </footer>

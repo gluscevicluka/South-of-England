@@ -73,7 +73,7 @@ a.nav-link.active {
 #featured-events .dark-overlay .featured-content {
   padding: 10px;
   position: absolute;
-  top: 45%;
+  bottom: 5%;
 }
 
 .book-button {
@@ -130,17 +130,19 @@ a.nav-link.active {
   background-image: url("/img/featured-events-1.jpeg");
   height: 465px;
   background-position: center;
+  position: relative;
 }
 #winter-fair-section .winter-fair-background-2 {
   background-image: url("/img/winter-fair-members-ticket.jpeg");
   height: 465px;
   background-position: center;
+  position: relative;
 }
 #winter-fair-section .dark-overlay .winter-fair-content {
   color: #fff;
   padding: 10px;
-  position: relative;
-  top: 40%;
+  position: absolute;
+  bottom: 5%;
 }
 .go-back {
   padding: 10px 30px;
@@ -241,6 +243,7 @@ a.nav-link.active {
   width: 30px;
   height: 30px;
   margin-right: 7px;
+  border-radius: 10px;
 }
 #donate-section .donate-icon {
   width: 64px;
@@ -306,19 +309,10 @@ a.nav-link.active {
 .modal-body {
   padding: 16px;
 }
-@media only screen and (max-width: 576px) {
-  #featured-events .dark-overlay .featured-content {
-    padding: 10px;
-    position: absolute;
-    top: 235px;
-  }
-  #winter-fair-section .dark-overlay .winter-fair-content {
-    color: #fff;
-    padding: 10px;
-    position: relative;
-    top: 140px;
-  }
+.fixed-width {
+  width: 180px;
 }
+
 @media only screen and (min-width: 1200px) {
   .your-order {
     padding: 45px 34px;

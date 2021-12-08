@@ -58,10 +58,10 @@
           <ul class="navbar-nav ms-auto ">
             <div class="d-sm-block d-xl-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link " href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Event List</a>
+                <a class="nav-link" href="event_list.html">Event List</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="single_events.html">Autumn Show</a>
@@ -97,15 +97,14 @@
                   height="16"
                  >
                   </div>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><i class="ri-flag-line"></i></li>
-                    <li><i class="ri-flag-line"></i></li>
-                    <li><i class="ri-flag-line"></i></li>
+                  <ul class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton1">
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/serbianFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Serbian</a></li>
+                    <li><a style="text-decoration: none; color: #333;" class="d-flex align-items-center" href="#"><img src="img/icons/chinaFlag.png" alt="Serbian Flag" class="img-fluid"> &nbsp; Chinese</a></li>
                   </ul>
                 </div>
               </li>
                  <li class="nav-item " >
-                 <button class="btn bg-primary d-flex px-4 default-radius"><i class="ri-shopping-cart-2-fill"></i> &nbsp;  &nbsp; <span class="text-underline">$25.00</span></button>
+                 <a href="checkout.html" class="btn bg-primary d-flex px-4 default-radius"><i class="ri-shopping-cart-2-fill"></i> &nbsp;   <span class="text-underline">$25.00</span></a>
               </li>
             </div>
           </ul>
@@ -124,58 +123,58 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">First Name: *</label>
-                <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+                <label for="first_name" class="form-label" >First Name: *</label>
+                <input type="text" class="form-control login-input"  aria-describedby="emailHelp" id="first_name">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Email address: *</label>
-                <input type="email" class="form-control login-input">
+                <label for="email" class="form-label">Email address: *</label>
+                <input type="email" class="form-control login-input" id="email">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Phone: *</label>
-                <input type="tel" class="form-control login-input" placeholder="+381">
+                <label for="phone" class="form-label">Phone: *</label>
+                <input type="tel" id="phone" class="form-control login-input" placeholder="+381">
               </div>
             </div>
             <div class="col-lg-6">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Last Name: *</label>
-                <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+                <label for="last_name" class="form-label">Last Name: *</label>
+                <input type="text" class="form-control login-input" id="last_name" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Confirm Email Address: *</label>
-                <input type="email" class="form-control login-input login-input">
+                <label for="email_confirm" class="form-label">Confirm Email Address: *</label>
+                <input type="email" class="form-control login-input " id="email_confirm">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Mobile Phone: *</label>
-                <input type="tel" class="form-control login-input" placeholder="+381">
+                <label for="mobile_phone" class="form-label">Mobile Phone: *</label>
+                <input type="tel" class="form-control login-input" placeholder="+381" id="mobile_phone">
               </div>
             </div>
             </div>
 
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Postcode / ZIP: *</label>
-              <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+              <label for="postcode" class="form-label">Postcode / ZIP: *</label>
+              <input type="text" class="form-control login-input"  aria-describedby="emailHelp" id="postcode">
             </div>
             
             <div class="row">
               <div class="col-lg-6">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label" >Address Line: *</label>
-                  <input type="text" class="form-control login-input" placeholder="House number and street name"  aria-describedby="emailHelp">
+                  <label for="adress_line" class="form-label" >Address Line: *</label>
+                  <input type="text" class="form-control login-input" placeholder="House number and street name" id="adress_line" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Town / City: *</label>
-                  <input type="text" class="form-control login-input"  aria-describedby="emailHelp">
+                  <label for="city" class="form-label">Town / City: *</label>
+                  <input type="text" class="form-control login-input" id="city" aria-describedby="emailHelp">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">&nbsp;</label>
-                  <input type="text" class="form-control login-input" placeholder="Apartments, suite, unit etc." aria-describedby="emailHelp">
+                  <label  class="form-label">&nbsp;</label>
+                  <input type="text" class="form-control login-input"  placeholder="Apartments, suite, unit etc." aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">State / Country: *</label>
-                  <select class="form-select login-input">
+                  <label for="country" class="form-label">State / Country: *</label>
+                  <select class="form-select login-input" id="country">
                     <option>Select city</option>
                   </select>
                 </div>
@@ -183,14 +182,14 @@
             </div>
 
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Is this the first time you have visited the show? *</label>
-              <select class="form-select login-input">
+              <label for="visited" class="form-label">Is this the first time you have visited the show? *</label>
+              <select class="form-select login-input" id="visited">
                 <option>Select..</option>
               </select>
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">How did you hear about us? *</label>
-              <select class="form-select login-input">
+              <label for="about_us" class="form-label">How did you hear about us? *</label>
+              <select class="form-select login-input" id="about_us">
                 <option>Select..</option>
               </select>
             </div>
