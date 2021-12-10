@@ -151,13 +151,6 @@ a.nav-link.active {
   border-radius: 100px;
 }
 
-.down-page {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-}
-
 .orange-link {
   color: #f5a003;
 }
@@ -167,6 +160,15 @@ a.nav-link.active {
   border-radius: 20px;
   display: inline-flex;
 }
+
+.more-info:hover{
+  background-color: rgba(206, 22, 22, 0.2);
+}
+
+.more-info .text-red:hover{
+  color: var(--bg-red);
+}
+
 .text-red {
   color: var(--bg-red);
 }
@@ -314,4 +316,8 @@ a:hover {
 
 .ts-position{
   top: 20%;
+}
+
+footer{
+  margin-top: 50px;
 }
