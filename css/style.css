@@ -201,7 +201,12 @@ a.nav-link.active {
   background-color: var(--bg-green);
   border-radius: 100px;
 }
-
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 #cart-overview .delete-item {
   color: #eb5757;
 }
@@ -215,12 +220,7 @@ a.nav-link.active {
   padding: 15px;
   border-radius: 100px;
 }
-.your-order {
-  padding: 45px 34px;
-  border-radius: 5px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-}
+
 .voucher-input {
   background: #f8f8f8;
   padding: 15px 26px;
@@ -306,17 +306,6 @@ a.nav-link.active {
 }
 .fixed-width {
   width: 180px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .your-order {
-    padding: 45px 34px;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-    position: fixed;
-    right: 13px;
-  }
 }
 
 .h-fit-content{
