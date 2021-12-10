@@ -318,3 +318,11 @@ a.nav-link.active {
     right: 13px;
   }
 }
+
+.h-fit-content{
+  height: fit-content;
+}
+
+.ts-position{
+  top: 20%;
+}
